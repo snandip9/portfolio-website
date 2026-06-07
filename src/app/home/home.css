@@ -1,0 +1,131 @@
+	.menu {
+		    text-align: center;
+		    margin-top: 50px;
+		    font-weight: 600;
+		    letter-spacing: 1px;
+		}
+
+		.menu a {
+		    display: inline-block;
+		    text-decoration: none;
+		    color: black;
+		    margin: 0 6px;
+		}
+
+		.menu img {
+		    width: 90px;   
+		    height: auto;
+		    display: block;
+		    margin: 0 auto 4px;
+		}
+
+		.menu span {
+		    display: block;
+		    font-size: 11px;
+		}
+
+		.disabled {
+			opacity: 0.5;
+			cursor: default;
+		}
+
+		.window {
+			/*background-image: url('/just-waves.png');*/
+			height: 262px;
+			width: 250px;
+			position: absolute;
+			top: 48px;
+			left: 15px;
+			background-size: cover;
+		}
+		.content {
+			height: 262px;
+			width: 250px;
+			position: absolute;
+			top: 48px;
+			left: 282px;
+			background-size: cover;
+			padding: 12px;
+			box-sizing: border-box;
+			font-size: 11px;
+			overflow: auto;
+		}
+		.title {
+			position: absolute;
+			top: 11px;
+			left: 16px;
+			color: #dbe1b6;
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+		.content a {
+			line-height: 1.2rem;
+		  color: #4c638f;
+		}
+		.nothing {
+			position: absolute;
+			top: 140px;
+			left: 252px;
+			display: none;
+		}
+		.cross {
+			height: 22px;
+			width: 22px;
+			position: absolute;
+			right: 11px;
+			top: 8px;
+			display: block;
+		}
+
+		* {
+			scrollbar-width: thin;
+		}
+
+		*::-webkit-scrollbar {
+			width: 6px; 
+			height: 6px;
+		}
+
+		.outer-window {
+	    width: 547px;
+	    height: 434px;
+	    margin: auto;
+	    position: relative;
+	    background: #c0c0c0;
+	    border: 2px solid #dfdfdf;
+	    font-family: monospace;
+	}
+
+	/* TOP TITLE BAR */
+	.title-bar {
+	    height: 28px;
+	    background: seagreen;
+	    color: white;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding: 0 6px;
+	    font-size: 12px;
+	    font-weight: bold;
+	    user-select: none;
+	}
+
+	/* WINDOW CONTROL BUTTONS */
+	.window-controls span {
+	    display: inline-block;
+	    width: 18px;
+	    height: 18px;
+	    margin-left: 4px;
+	    text-align: center;
+	    line-height: 16px;
+	    background: #c0c0c0;
+	    color: black;
+	    font-size: 12px;
+	    border: 1px solid #fff;	}
+
+	/* BODY AREA */
+	.window-body {
+	    display: flex;
+	    height: 362px;
+	    background: lightgrey;
+	}
