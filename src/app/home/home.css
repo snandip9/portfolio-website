@@ -61,6 +61,7 @@
 		.content a {
 			line-height: 1.2rem;
 		  color: #4c638f;
+		  font-weight: bold;
 		}
 		.nothing {
 			position: absolute;
