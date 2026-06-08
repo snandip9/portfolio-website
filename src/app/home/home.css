@@ -13,7 +13,7 @@
 		}
 
 		.menu img {
-		    width: 90px;   
+		    width: 120px;   
 		    height: auto;
 		    display: block;
 		    margin: 0 auto 4px;
@@ -88,10 +88,10 @@
 
 		.outer-window {
 	    width: 547px;
-	    height: 434px;
+	    height: 334px;
 	    margin: auto;
 	    position: relative;
-	    background: #c0c0c0;
+	    background: lightgray;
 	    border: 2px solid #dfdfdf;
 	    font-family: monospace;
 	}
@@ -118,7 +118,7 @@
 	    margin-left: 4px;
 	    text-align: center;
 	    line-height: 16px;
-	    background: #c0c0c0;
+	    background: lightgray;
 	    color: black;
 	    font-size: 12px;
 	    border: 1px solid #fff;	}
@@ -126,6 +126,35 @@
 	/* BODY AREA */
 	.window-body {
 	    display: flex;
-	    height: 362px;
-	    background: lightgrey;
+	    height: 262px;
 	}
+
+	.window {
+		background-image: url('/me.png');
+		height: 262px;
+		width: 250px;
+		position: absolute;
+		top: 48px;
+		left: 15px;
+		background-size: cover;
+		}
+
+	.links-bar {
+	    text-align: center;
+	    padding: 8px 0;
+	    font-size: 11px;
+	    border-top: 1px solid #808080;
+	    border-bottom: 1px solid #fff;
+	    background: #d4d0c8;
+		}
+
+	.links-bar a {
+		    color: #000080;
+		    text-decoration: none;
+		    margin: 0 10px;
+		}
+
+	.links-bar a:hover {
+		    text-decoration: underline;
+		}
+
