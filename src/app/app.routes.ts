@@ -3,7 +3,8 @@ import {CV} from './cv/cv';
 import {Contact} from './contact/contact';
 import {Projects} from './projects/projects';
 import {Blog} from './blog/blog';
-import {Home} from './home/home'
+import {Home} from './home/home';
+import {Aboutme} from './aboutme/aboutme'
 
 export const routes: Routes = [
 
@@ -30,7 +31,14 @@ export const routes: Routes = [
 	{
 		path: '',
 		component: Home
+	},
+
+	{
+		path: 'aboutme',
+		component: Aboutme
 	}
+
+
 
 
 

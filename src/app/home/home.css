@@ -150,7 +150,7 @@
 		}
 
 	.links-bar a {
-		    color: #000080;
+		    color: seagreen;
 		    text-decoration: none;
 		    margin: 0 10px;
 		}
@@ -158,4 +158,28 @@
 	.links-bar a:hover {
 		    text-decoration: underline;
 		}
+
+	.home-page {
+		    min-height: 100vh;
+		    width: 100%;
+		    background-image: url('/just-waves.png');
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		html, body {
+		    height: 100%;
+		    margin: 0;
+		}
+
+		body {
+		    margin: 0;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    min-height: 100vh;
+		}
+
+
 
