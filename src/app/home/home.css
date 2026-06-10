@@ -29,15 +29,6 @@
 			cursor: default;
 		}
 
-		.window {
-			/*background-image: url('/just-waves.png');*/
-			height: 262px;
-			width: 250px;
-			position: absolute;
-			top: 48px;
-			left: 15px;
-			background-size: cover;
-		}
 		.content {
 			height: 262px;
 			width: 250px;
