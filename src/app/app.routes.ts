@@ -36,12 +36,6 @@ export const routes: Routes = [
 	{
 		path: 'aboutme',
 		component: Aboutme
-	}
-
-
-
-
-
-
+	},
 
 ];
