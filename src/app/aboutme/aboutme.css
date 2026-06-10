@@ -5,7 +5,7 @@
 body {
   font-family: monospace;
   margin: 0;
-  padding: 70px;
+  padding: 40px;
 }
 
 /* Header */
@@ -24,7 +24,7 @@ header {
 }
 
 h1{
-  font-size: 40px;
+  font-size: 50px;
 }
 
 /* Sidebar/left column */
@@ -81,3 +81,8 @@ h1{
       color: black;
       font-size: 12px;
       border: 1px solid #fff; }
+
+  .monkeyimage{
+    width: 600px;
+    height: 300px;
+  }
