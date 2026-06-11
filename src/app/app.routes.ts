@@ -4,7 +4,8 @@ import {Coolstuff} from './coolstuff/coolstuff';
 import {Projects} from './projects/projects';
 import {Blog} from './blog/blog';
 import {Home} from './home/home';
-import {Aboutme} from './aboutme/aboutme'
+import {Aboutme} from './aboutme/aboutme';
+import {Pgp} from './pgp/pgp';
 
 export const routes: Routes = [
 
@@ -37,5 +38,11 @@ export const routes: Routes = [
 		path: 'aboutme',
 		component: Aboutme
 	},
+
+	{
+
+		path: 'pgp',
+		component: Pgp
+	}
 
 ];
