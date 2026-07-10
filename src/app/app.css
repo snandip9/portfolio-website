@@ -1,0 +1,16 @@
+nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.home-link {
+  font-size: 3rem;
+  color: seagreen;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: mediumseagreen;
+}

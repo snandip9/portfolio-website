@@ -4,6 +4,7 @@ import {Coolstuff} from './coolstuff/coolstuff';
 import {Projects} from './projects/projects';
 import {Blog} from './blog/blog';
 import {Home} from './home/home';
+import {Homelabbing} from './projects/homelabbing/homelabbing'
 import {Aboutme} from './aboutme/aboutme';
 
 
@@ -37,6 +38,15 @@ export const routes: Routes = [
 	{
 		path: 'aboutme',
 		component: Aboutme
-	}
+	},
+
+	{
+		path: 'homelabbing',
+		component: Homelabbing
+	},
+
+
+
+
 
 ];

@@ -6,7 +6,7 @@
 body {
   font-family: monospace;
   margin: 0;
-  padding: 40px;
+  padding: 150px;
   
 }
 
@@ -33,6 +33,7 @@ header {
 
 h1{
   font-size: 50px;
+  font-family: monospace;
 }
 
 
@@ -78,27 +79,50 @@ h1{
       font-size: 12px;
       border: 1px solid #fff; }
 
-.custom-btn {
-    background-color: seagreen;
-    color: white;
+img {
+
+  height: 500px;
+  width: 400px ;
+  padding: 20px;
+}
+
+
+details {
+    margin-bottom: 20px;
     border: 2px solid black;
-    padding: 5px 12px;
-    font-family: monospace;
-    font-size: 14px;
-    text-decoration: none;
-    display: inline-block;
+    padding: 0;
+    background-color: lightgray;
+    box-shadow: 4px 4px 0px black;
+}
+
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 3px 3px 0px black;
-    transition: 0.1s;
+    list-style: none;
+    font-family: monospace;
+    background: seagreen;
+    color: white;
+    padding: 8px 12px;
+    border-bottom: 2px solid black;
 }
 
-.custom-btn:hover {
-    background-color: white;
-    color: seagreen;
-    border: 2px solid seagreen;
+summary::-webkit-details-marker {
+    display: none;
 }
 
-.custom-btn:active {
-    box-shadow: 1px 1px 0px black;
-    transform: translate(2px, 2px);
+summary::before {
+    content: "[+] ";
+}
+
+details[open] summary::before {
+    content: "[-] ";
+}
+
+details p {
+    padding: 15px;
+    margin: 0;
+    background-color: #d3d3d3;
+    line-height: 1.6;
+    font-size: 14px;
 }

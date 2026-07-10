@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homelabbing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="homelabbing.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+<header>
+    <h1>Homelabbing</h1>
+</header>
+
+    <p><small>
+        Welcome to the Homelab series!! I do not believe in letting corporations dictate my experience with the internet and technology. If Netflix decides to take shows off their platform, I just have to deal with it. If Spotify wants to bump up the price of Premium, then I either have to submit or suffer through continuous ads. Most modern services are completely unusable unless you pay for their premium subscription plans.
+
+        <br>
+
+        But here's the catch: you never truly own your music, movies, or books. If Amazon, Spotify, or Netflix cease to exist, then that media effectively disappears too. This project is inspired by annoyance and frustration with these companies. People have been trading their privacy and money for convenience, and that must change.
+
+        <br>
+
+        I want to be in control of the media I consume and the way my privacy is handled, so I am setting up my own server to ditch these services and take back control. The goal will always be to minimise the influence these large corporations have over your life. Do not trade your privacy for comfort. Build your own server!!
+
+        <br>
+
+        This series will mostly be blog-based because this is an ongoing project. I will almost certainly break things and put them back together, so this will be a casual project log documenting the evolution of my home server.
+    </small></p>
+
+<details>
+    <summary>Setting up the Hardware</summary>
+
+    <p>
+        This project was built with an old Dell OptiPlex 5050 SFF with no RAM and no storage. It was an old machine from DCU that they were throwing away, so I paid nothing for it, although upgrading it did cost a little.
+
+        <br>
+
+        I bought:
+
+        <br>
+        • 32 GB DDR4 RAM – €60
+        <br>
+        • 500 GB SSD – €23 (mostly paid for using an Amazon voucher)
+
+        <br><br>
+
+        So getting a machine capable of hosting my server only cost me €83.
+
+        <br><br>
+
+        I eventually plan to expand into a dedicated NAS server, which will also be bought second-hand. For now, this single machine handles both compute and storage.
+    </p>
+
+    <img src="/HomeServer.jpg" alt="Home server">
+
+</details>
+
+<details>
+    <summary>Part One: The Set Up and Installing Services</summary>
+
+    <p>
+        I installed Proxmox on the machine and connected to it from my laptop.
+
+        <br><br>
+
+        I deployed Tailscale inside an LXC container to provide secure networking between all of my services, devices, and containers, even when I am away from home.
+
+        <br><br>
+
+        Running Tailscale in its own LXC keeps networking isolated from the rest of the environment. If there is ever a networking issue, it won't directly affect the other services.
+
+        <br><br>
+
+        I also created a virtual machine to host Docker containers. Running my applications through Docker makes them easier to manage and keeps resource usage low.
+
+        <br><br>
+
+        I plan to use Portainer to manage all of my Docker containers through a single web interface as the homelab grows.
+    </p>
+
+</details>
+
+</body>
+</html>
